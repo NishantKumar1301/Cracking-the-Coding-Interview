@@ -16,3 +16,21 @@ def urlify(s):
 
 input_string=input()
 print(urlify(input_string))
+
+#Second Approach
+
+def urilify_string(input_string):
+    true_length = len(input_string.rstrip())
+    input_string=list(input_string)
+    space_count = sum(1 for i in range(true_length) if input_string[i]==" ")
+    index = true_length + space_count*2
+    for i in range(true_length-1,-1,-1):
+        if input_string[i]==' ':
+            input_string[index-3:index]="%20"
+            index -=3
+        else:
+            input_string[index-1]=input_string[i]
+            index-=1
+    return ''.join(input_string)
+input_string=input()
+print(urilify_string(input_string))
