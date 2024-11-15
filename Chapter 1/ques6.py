@@ -2,7 +2,7 @@
 the counts of repeated characters. For example, the string aabcccccaaa would become a2blc5a3.
 If the "compressed" string would not become smaller than the original string, your method should
 return the original string. You can assume the string has only uppercase and lowercase 
-letters (a - z). Hints:#92, #110"""
+letters (a - z)."""
 
 def string_compression(input_string):
     count = 1
