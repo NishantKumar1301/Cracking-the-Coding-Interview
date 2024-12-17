@@ -24,11 +24,6 @@ class ListNode(object):
         self.next = next
 class Solution(object):
     def partition(self, head, x):
-        """
-        :type head: Optional[ListNode]
-        :type x: int
-        :rtype: Optional[ListNode]
-        """
         
         #Step1: Creation of both the smaller and larger linked list
         smaller_linked_list = ListNode(0)
